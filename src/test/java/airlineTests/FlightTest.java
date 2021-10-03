@@ -79,4 +79,25 @@ public class FlightTest {
         assertEquals(598, flight.getAvailableSeats());
     }
 
+    @Test
+    public void canBookPassengerWhenSeatAvailable(){
+        flight.bookSeat(passenger_1);
+        assertEquals(true, flight.canBookSeat());
+    }
+
+    @Test
+    public void cannotBookPassengerWhenNoSeatAvailable(){
+        flight.bookSeat(passenger_1);
+        flight.bookSeat(passenger_1);
+        flight.bookSeat(passenger_1);
+        assertEquals(false, flight.canBookSeat());
+    }
+//    this test fails? plane capacity set to 2 for test
+
+    @Test
+    public void checkPilotIsFlying(){
+        assertEquals("I am a leaf on the wind", pilot.flyingMessage());
+    }
+
+
 }

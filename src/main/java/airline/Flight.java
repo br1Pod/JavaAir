@@ -122,8 +122,21 @@ public class Flight {
         this.departureTime = departureTime;
     }
 
-
     public int getAvailableSeats() {
         return this.planeType.getCapacity() - this.passengersOnFlight();
     }
+
+    public void bookSeat(Passenger passenger){
+        this.passengers.add(passenger);
+    }
+
+    public boolean canBookSeat(){
+        if (this.planeType.getCapacity() > this.getAvailableSeats()){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
 }

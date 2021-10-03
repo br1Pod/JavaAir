@@ -17,4 +17,8 @@ public class Pilot extends Crew{
         this.licenceNo = licenceNo;
     }
 
+    public String flyingMessage(){
+        return "I am a leaf on the wind";
+    }
+
 }
