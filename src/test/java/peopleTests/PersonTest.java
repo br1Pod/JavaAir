@@ -10,13 +10,4 @@ public class PersonTest {
 
     Person person;
 
-    @Before
-    public void before() {
-//        person = new Person("Joe Bloggs");  - Will not work as abstract cant be instantiated.
-    }
-
-    @Test
-    public void testPersonHasName(){
-        assertEquals();
-    }
 }

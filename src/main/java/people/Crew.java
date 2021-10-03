@@ -2,8 +2,14 @@ package people;
 
 public class Crew extends Person{
 
-    public Crew(String name, Enum Rank) {
+    private Rank rank;
+
+    public Crew(String name, Rank rank) {
         super(name);
         this.rank = rank;
+    }
+
+    public Rank getRank(){
+        return this.rank;
     }
 }
