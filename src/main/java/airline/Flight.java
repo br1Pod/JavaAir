@@ -123,5 +123,7 @@ public class Flight {
     }
 
 
-
+    public int getAvailableSeats() {
+        return this.planeType.getCapacity() - this.passengersOnFlight();
+    }
 }
