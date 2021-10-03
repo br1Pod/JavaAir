@@ -46,4 +46,10 @@ public class FlightTest {
         flight.addPassengers(passenger_2);
         assertEquals(2,flight.passengersOnFlight());
     }
+
+    @Test
+    public void flightHasPlane(){
+        assertEquals(PlaneType.BOEING747, flight.getPlaneType());
+    }
+
 }
