@@ -57,4 +57,9 @@ public class FlightTest {
         assertEquals("FL01", flight.getFlightNumber());
     }
 
+    @Test
+    public void checkFlightDestination(){
+        assertEquals("EDI", flight.getDestination());
+    }
+
 }
