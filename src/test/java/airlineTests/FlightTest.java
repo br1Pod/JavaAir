@@ -13,7 +13,7 @@ import people.Rank;
 import static org.junit.Assert.assertEquals;
 
 public class FlightTest {
-    private Crew pilot;
+    private Pilot pilot;
     private Crew steward;
     private Passenger passenger_1;
     private Passenger passenger_2;
@@ -29,7 +29,8 @@ public class FlightTest {
     }
 
     @Test
-    public void pilotHasName(){
-        assertEquals("Clarence Oveur", pilot.getName());
+    public void flightHasPilot(){
+        flight.addPilots(pilot);
+        assertEquals(1, flight.noOfPilots());
     }
 }

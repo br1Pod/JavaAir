@@ -42,6 +42,14 @@ public class Flight {
         this.pilots = pilots;
     }
 
+    public void addPilots(Pilot pilot){
+        this.pilots.add(pilot);
+    }
+
+    public int noOfPilots(){
+        return this.pilots.size();
+    }
+
     public ArrayList<Crew> getCrew() {
         return crew;
     }
