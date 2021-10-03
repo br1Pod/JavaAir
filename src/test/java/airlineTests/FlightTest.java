@@ -33,4 +33,10 @@ public class FlightTest {
         flight.addPilots(pilot);
         assertEquals(1, flight.noOfPilots());
     }
+
+    @Test
+    public void flightHasCrew(){
+        flight.addCrew(steward);
+        assertEquals(1, flight.flightHasCrew());
+    }
 }

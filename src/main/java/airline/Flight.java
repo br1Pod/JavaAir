@@ -58,6 +58,14 @@ public class Flight {
         this.crew = crew;
     }
 
+    public void addCrew(Crew steward) {
+        this.crew.add(steward);
+    }
+
+    public int flightHasCrew(){
+        return this.crew.size();
+    }
+
     public ArrayList<Passenger> getPassengers() {
         return passengers;
     }
@@ -105,4 +113,7 @@ public class Flight {
     public void setDepartureTime(String departureTime) {
         this.departureTime = departureTime;
     }
+
+
+
 }
