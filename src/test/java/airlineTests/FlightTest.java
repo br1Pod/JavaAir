@@ -39,4 +39,11 @@ public class FlightTest {
         flight.addCrew(steward);
         assertEquals(1, flight.flightHasCrew());
     }
+
+    @Test
+    public void flightHasPassengers(){
+        flight.addPassengers(passenger_1);
+        flight.addPassengers(passenger_2);
+        assertEquals(2,flight.passengersOnFlight());
+    }
 }

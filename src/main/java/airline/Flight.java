@@ -74,6 +74,14 @@ public class Flight {
         this.passengers = passengers;
     }
 
+    public void addPassengers(Passenger passenger){
+        this.passengers.add(passenger);
+    }
+
+    public int passengersOnFlight(){
+        return passengers.size();
+    }
+
     public PlaneType getPlaneType() {
         return planeType;
     }
