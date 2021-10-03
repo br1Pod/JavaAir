@@ -52,4 +52,9 @@ public class FlightTest {
         assertEquals(PlaneType.BOEING747, flight.getPlaneType());
     }
 
+    @Test
+    public void checkFlightHasFlightNumber(){
+        assertEquals("FL01", flight.getFlightNumber());
+    }
+
 }
