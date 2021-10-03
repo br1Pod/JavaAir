@@ -62,4 +62,9 @@ public class FlightTest {
         assertEquals("EDI", flight.getDestination());
     }
 
+    @Test
+    public void checkFlightHasDeparturePort(){
+        assertEquals("GLA", flight.getDeparturePort());
+    }
+
 }
