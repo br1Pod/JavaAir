@@ -67,4 +67,9 @@ public class FlightTest {
         assertEquals("GLA", flight.getDeparturePort());
     }
 
+    @Test
+    public void checkFlightHasDepartureTime(){
+        assertEquals("10.00", flight.getDepartureTime());
+    }
+
 }
