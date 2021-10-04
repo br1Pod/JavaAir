@@ -30,4 +30,9 @@ public class PilotTest {
     public void testPilotHasLicenceNo(){
         assertEquals("A01-ROGER", pilot.getLicenceNo());
     }
+
+    @Test
+    public void checkPilotIsFlying(){
+        assertEquals("I am a leaf on the wind", pilot.flyingMessage());
+    }
 }

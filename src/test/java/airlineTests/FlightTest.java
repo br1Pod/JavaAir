@@ -94,10 +94,9 @@ public class FlightTest {
     }
 //    this test fails? plane capacity set to 2 for test
 
-    @Test
-    public void checkPilotIsFlying(){
-        assertEquals("I am a leaf on the wind", pilot.flyingMessage());
-    }
+
+
+
 
 
 }
